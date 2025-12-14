@@ -45,7 +45,7 @@ def setup_japanese_font():
 # --- 2. サイドバー入力 ---
 st.sidebar.header("📝 営業用入力フォーム")
 with st.sidebar.expander("👤 お客様情報", expanded=True):
-    customer_name = st.text_input("お名前（様は自動付与）", "吉野", placeholder="例：山田")
+    customer_name = st.text_input("お名前（様は自動付与）", "", placeholder="例：山田")
     income_man = st.number_input("世帯年収 (万円)", 200, 5000, 600, 10)
     own_money_man = st.number_input("自己資金/頭金 (万円)", 0, 5000, 200, 10)
 
